@@ -27,27 +27,32 @@
 
       <div class="row p-3">
         <div class="col">
-          <h2 class="text-start fw-bold">Books</h1>
+          <h2 class="text-start fw-bold">Books</h2>
         </div>
       </div>
       
-      <div class="row">
         <form>
-          <div class="fs-5 mb-3">
-            <label for="bookName" class="form-label fw-normal"></label>
-            <input type="text" class="form-control" id="bookName" placeholder="Please Enter book Name" required />
-          </div>
           <div class="row">
-            <div class="col">
+            <div class="col-4">            
+              <label for="bookName" class="form-label fw-normal"></label>
+              <input type="text" class="form-control" id="bookName" placeholder="Please Enter book Name" required />            
+            </div>          
+            <div class="col-2 m-4">
               <label>
                 <button type="submit" class="btn btn-dark" id="submitBook">Submit</button>
               </label>
             </div>
-          </div>  
-        </form>
-      </div>
+          </div>
+        </form>      
 
-      <div id="book-Issued" class="row gap-2"></div>
+      <div id="book-Issued" class="row m-3"></div>
+      
+      <div class="row p-3">
+        <div class="col">
+          <h2 class="text-start fw-bold">Returned Books</h2>
+        </div>
+      </div>
+      <div id="returned-Books" class="row"></div>
 
     </div>
   </body>

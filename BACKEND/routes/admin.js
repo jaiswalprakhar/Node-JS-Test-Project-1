@@ -5,8 +5,10 @@ const adminController = require('../controllers/admin');
 
 const router = express.Router();
 
-router.post('/create-book-issue', adminController.issueBook);
+router.post('/create-book-issue', adminController.postIssueBook);
 
-router.get('/get-review/:companyName', adminController.getReview);
+router.get('/get-book-issue', adminController.getIssueBook);
+
+router.patch('/return-book/:id', adminController.returnIssuedBook);
 
 module.exports = router;

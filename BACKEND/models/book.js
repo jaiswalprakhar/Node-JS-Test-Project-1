@@ -20,13 +20,42 @@ const Book = sequelize.define('book', {
             }
         }
     },
-    bookIssueDate: {
+    bookIssuingDateTime: {
         type: Sequelize.DATE,
         allowNull: false
     },
-    bookReturnDate: {
+    bookIssuingDate: {
+        type: Sequelize.DATEONLY,
+        allowNull: false,
+    },
+    bookIssuingTime: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    bookReturningDateTime: {
         type: Sequelize.DATE,
         allowNull: false
+    },
+    bookReturningDate: {
+        type: Sequelize.DATEONLY,
+        allowNull: false
+    },
+    bookReturningTime: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    bookReturnStatus: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    bookReturnedDateTime: {
+        type: Sequelize.DATE
+    },
+    bookReturnedDate: {
+        type: Sequelize.DATEONLY
+    },
+    bookReturnedTime: {
+        type: Sequelize.STRING
     },
     fine: {
         type: Sequelize.INTEGER,
